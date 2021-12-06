@@ -1,39 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Estilos con bootstrap -->
-        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
-        <!-- Link de vinculacion de css -->
-        <link rel="stylesheet" href="./css/style.css"/>
-        <link rel = "preconnect" href = "https://fonts.googleapis.com">
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script & family = Ephesis & display = swap "rel =" stylesheet ">
-        <script src="https://kit.fontawesome.com/42c23b6eb6.js" crossorigin="anonymous"></script>
-        <title>Portfolio</title>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img class = "logo"src="./Images/LogoMakr.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Skills</a>
-              <a class="nav-link" href="#">Projects</a>
-              <a class="nav-link" href="#">Contact</a>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos con bootstrap -->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <!-- Link de vinculacion de css -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- Estilo JS -->
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./icoon_moon/style.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type = "./Images/png" href="./Images/icono.png">
+    <link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script & family = Ephesis & display = swap "rel =" stylesheet ">
+    <script src="https://kit.fontawesome.com/42c23b6eb6.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img class = "logo"src="./Images/LogoMakr.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link" href="#"> <i class="fas fa-user-alt"></i> About</a>
+            <a class="nav-link" href="#"><i class="fas fa-keyboard"></i>Skills</a>
+            <a class="nav-link" href="#"><i class="fas fa-briefcase"></i>Projects</a>
+            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact</a>
           </div>
         </div>
-      </nav>
-
-        <!-- LINK DE BOOTSTRAP JS -->
-      <script src="../Bootstrap/js/bootstrap.js"></script> 
-    </body>
+      </div>
+    </nav>
+    <div class="container-gif">
+      <div class="foto-mia">
+        <!-- <img src="./Images/mia.jpeg" alt="foto principal"> -->
+      </div>
+      <div class="container-texto">
+        <p class="etiqueta">Hello i'am</p>
+        <h1 class="nombre">Kevin Oviedo</h1>
+        <h2 class="titulo"><span class="typed"></span></h2>
+      </div>
+    </div>
+    <div class="grilla">
+      <div>
+        <img class="grilla__img" src="./Images/about.png" alt="imagen sobre mi">
+      </div>
+      <div class="grilla__container">
+        <h2 class="grilla__titulo">
+         About Me
+        </h2>
+        <p class="grilla__descripcion">Hello, I'm Kevin, web-developer based on Argentina. 
+          I have some experience in web development using some very useful frameworks and libraries.
+        </p>
+        <p class="grilla__skill">Html</p>
+        <P  class="grilla__skill">Css</P>
+        <P  class="grilla__skill">Bootstrap</P>
+        <p  class="grilla__skill">Sass</p>
+        <p  class="grilla__skill">Git</p>
+        <div>
+          <a class="grilla__button-suscripcion" href="./cv/Kevin-Oviedo.pdf" download>Download cv <i class="fas fa-download"></i></a> 
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h2 class="title">Technical Skills</h2>
+      </div>  
+      <div class="container-card">
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-html5 container-card--color1 c1"></i></div>
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-css3-alt container-card--color2 c2"></i></div>
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-bootstrap container-card--color3 c3"></i></div>
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-js container-card--color4 c4"></i></div>
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-git-square container-card--color5 c5"></i></div>
+        <div class="container-card__card container-card__multi-card"><i class="fab fa-sass container-card--color6 c6"></i></div>
+      </div>
+    </div>
+    <div>
+        <div>
+          <h2 class="title">Projects</h2>
+        </div>
+        <div class="container-proyecto">
+          <div class="container-proyecto__borde">
+            <div>
+              <h3 class="container-proyecto__title">Todo list</h3>
+            </div>
+            <div class="container-proyecto__skill">
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color1">HTML</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color2">CSS</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color3">BS</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color4">GITHUB</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color5">JS</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color6">GIT</p></div>
+              <div><p class="container-proyecto__etiqueta container-proyecto__etiqueta--color7">SASS</p></div>
+            </div>
+            <div class="container-proyecto__img">
+            </div>
+            <section class="container-proyecto__enlace">
+              <a href="https://kevinoviedo12.github.io/proyecto_coder/" target="_blank">VIEW</a>
+              <a href="https://github.com/Kevinoviedo12/proyecto_coder" target="_blank">SOURCE</a>
+            </section>
+          </div>
+        </div>
+      </div>  
+      <div class="content">
+        <h3 class="logo">Contact <span>Us</span></h3>
+        <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+            <h3 class="sub-logo">
+              Contact us
+            </h3>
+            <form action="">
+              
+              <div class="container-form">
+                <div class="container-form1">
+                  <div>
+                    <label>FullName</label>
+                    <input type="text" name="fullname">
+                  </div>
+                  <div>
+                    <label>Email Adress</label>
+                    <input type="email" name="email">
+                  </div>
+                </div>
+                <div  class="container-form1">
+                  <div>
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone">
+                  </div>
+                  <div>
+                    <label>Reason</label>
+                    <input type="text" name="affair">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="block">
+                <label>Message</label> 
+                <textarea name="message" rows="3"></textarea>
+              </div>
+              <div class="block">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h4>
+              More Info
+            </h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Lanús, Buenos Aires, Argentina</li>
+              <li><i class="fas fa-phone"></i> (+54 9) 11-3592-5279</li>
+              <li><i class="fas fa-envelope-open-text"></i> kevinoviedo2018@gmail.com</li>
+            </ul>
+            <p class="parrafo">
+              I'm currently studying at UNLa - Universidad Nacional de Lanus. During the covid I had the opportunity to learn web development
+              I always liked computing, but I never got into programming, this last year, I can learn and it is what I like.</p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjDbPKNxLrjpWdsmVfmwbHSpQgnWFqNLwvwmvvBHrKWZLLWWrrJqJXKMMpXgGFlnMFkHhQ" target="_blank">kevinoviedo2018@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <hr>
+      <p class="title-footer">KevinDev © All rights reserved</p>
+      <div class="icons">
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/kevin-adrian-oviedo-1263a2168/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/Kevinoviedo12"><i class="fab fa-github-square icons--color"></i></a>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- CDN Typed.js -->
+    <script src="./js/typed.js"></script>
+   
+    <!-- LINK DE BOOTSTRAP JS -->
+    <script src="../Bootstrap/js/bootstrap.js"></script> 
+       
+  </body>
 </html>
